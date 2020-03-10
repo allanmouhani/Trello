@@ -1,0 +1,462 @@
+/**/
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+
+body {
+  position: relative;
+  background: url("assets/bg.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+#main-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+}
+
+#logout-style {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  background: rgba(255, 255, 255, 0);
+}
+
+#logout-style a {
+  align-self: center;
+  color: #007AC0;
+  font-size: 1.5rem;
+  margin-left: 8px;
+}
+
+#logout-style h1 {
+  color: #FFF;
+  text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* HOME SECTION STYLING */
+#home-section {
+  flex-basis: 40%;
+}
+
+#home-section div {
+  display: flex;
+  justify-content: center;
+}
+
+#home-section div ul {
+  background: rgba(255, 255, 255, 0.1);
+  list-style: none;
+  padding: 5vw;
+  border-radius: 10px;
+}
+
+#home-section div ul li {
+  margin-bottom: 2rem;
+}
+
+#home-section div ul li h2 {
+  text-align: justify;
+  font-size: 1.5vw;
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+  padding: 5px;
+}
+
+.home-active {
+  background: #FFF;
+  color: #007AC0;
+  text-decoration: none;
+  border-radius: 5px;
+  text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* PRIVATE TABLES SECTION - TABLES SHARED WITH OTHERS - TABLES SHARED WITH ME STYLING */
+
+#private-tables-section,
+#tables-shared-with-others-section,
+#tables-shared-with-me-section {
+  position: relative;
+  top: 20vh;
+  display: flex;
+}
+
+#view-private-tables,
+#view-tables-shared-with-others,
+#view-tables-shared-with-me {
+  flex-basis: 55%;
+  height: 400px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 10px;
+}
+
+#view-private-tables form h3 {
+  margin-top: 1rem;
+  color: #007AC0;
+}
+
+#view-private-tables form input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+  color: #333;
+  border: 1px solid #000;
+  border-radius: 7px;
+}
+
+#view-private-tables form input[type="submit"] {
+  padding: 5px;
+  border-radius: 7px;
+  background: #FFF;
+  color: #573F34;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+#view-private-tables ul,
+#view-tables-shared-with-others ul,
+#view-tables-shared-with-me ul {
+  margin-top: 2rem;
+  list-style: none;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+}
+
+#view-private-tables ul li,
+#view-tables-shared-with-others ul li,
+#view-tables-shared-with-me ul li {
+  background: #DCDCDC;
+  width: 60%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+#view-private-tables ul li:hover,
+#view-tables-shared-with-others ul li:hover,
+#view-tables-shared-with-me ul li:hover {
+  background: #007AC0;
+}
+
+#view-private-tables ul li a,
+#view-tables-shared-with-others ul li a,
+#view-tables-shared-with-me ul li a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#view-private-tables ul li h3,
+#view-tables-shared-with-others ul li h3,
+#view-tables-shared-with-me ul li h3 {
+  font-weight: bold;
+  display: inline;
+  color: #FFF;
+  text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+#view-private-tables ul li a button,
+#view-tables-shared-with-others ul li a button {
+  padding: 5px;
+  border-radius: 7px;
+  background: #FFF;
+  font-weight: bold;
+  color: #808080;
+}
+
+/* View Table Section */
+
+#view-table-section {
+  position: relative;
+  height: 88.5vh;
+  display: flex;
+}
+
+#private-tables-list,
+#view-members {
+  width: 20%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: auto;
+}
+
+#private-tables-list button,
+#view-members button {
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  margin: 1rem 0;
+}
+
+#private-tables-list button:hover,
+#view-members button:hover {
+  cursor: pointer;
+}
+
+#private-tables-list button h2,
+#view-members button h2 {
+  color: #007AC0;
+}
+
+#private-tables-list ul,
+#list-members {
+  list-style: none;
+}
+
+#private-tables-list li,
+#list-members li {
+  line-height: 2.5rem;
+}
+
+
+
+
+#private-tables-list ul li a,
+#member a {
+  color: #000;
+  font-weight: bold;
+}
+
+#member {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+}
+
+#member h3,
+#member a {
+  display: inline-block;
+}
+
+#member a {
+  color: #FFF;
+  text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+#table-main-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  padding: 3%;
+  overflow: auto;
+}
+
+#rename-table-form input[type="text"] {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#table-main-section #table-name {
+  background: rgba(0, 0, 0, 0);
+  font-size: 2rem;
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+}
+
+#add-column-form {
+  margin-top: 1rem;
+}
+
+#add-column-form input[type="text"],
+#add-members input {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#add-column-form input[type="submit"],
+#add-members button {
+  padding: 5px;
+  border-radius: 7px;
+  background: #FFF;
+  color: #573F34;
+  font-weight: bold;
+}
+
+#table-view-container {
+  width: 70vw;
+  padding: 5%;
+}
+
+#table-view {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly safe;
+  overflow: auto;
+  height: 55vh;
+}
+
+#columns-view {
+  width: 300px;
+  max-height: 50vh;
+  text-align: center;
+  margin: auto;
+  margin-right: 20px;
+  background: #007AC0;
+  border-radius: 5px;
+  box-shadow: -5px 2px 2px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  padding: 3rem;
+}
+
+#columns-view-head {
+  border-bottom: 1px solid #D3D3D3;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#columns-view-head h3 {
+  display: inline-block;
+  padding: 5px;
+  color: #FFF;
+}
+
+#columns-view-head button {
+  padding: 2px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  color: #FFF;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#columns-view-add-task input,
+#columns-view-add-task a button {
+  background: #007AC0;
+  border: 1px solid #FFF;
+  color: #FFF;
+  padding: 4px;
+}
+
+#columns-view-add-task input::placeholder {
+  color: #FFF;
+  opacity: 0.5;
+}
+
+#columns-view-add-task input:focus,
+#columns-view-add-task a button:active {
+  background: #fff;
+  color: #007AC0;
+}
+
+#columns-view-add-task input {
+  display: inline-block;
+  width: 70%;
+  color: #007AC0;
+}
+
+#columns-view-add-task {
+  margin-bottom: 2rem;
+}
+
+#tasks-view {
+  list-style: none;
+}
+
+#tasks-view li div {
+  display: flex;
+  justify-content: space-between;
+  background: #FFF;
+  color: #007AC0;
+  margin-bottom: 1rem;
+  padding: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#tasks-view li div p {
+  display: inline;
+  word-wrap: break-word;
+}
+
+#tasks-view li div a button {
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  color: #007AC0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#tasks-drop-zone {
+  border: 1px dashed #FFF;
+  color: #FFF;
+}
+
+
+#view-members-section {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  font-family: "Roboto Mono", monospace;
+}
+
+#view-members-options {
+  background: rgba(0, 0, 0, 0.5);
+  width: 20%;
+  align-self: center;
+  padding-bottom: 5%;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+}
+
+#go-back-to-last-state {
+  background: none;
+  border:none;
+  font-weight: bold;
+  color: #FFF;
+  margin-left: 10px;
+  cursor: pointer; 
+}
+
+
+#members-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#delete-member {
+  margin-bottom: 20px;
+}
+
+#delete-member h3, #delete-member a, .options {
+  display: inline-block;
+}
+
+#delete-member h3 {
+  margin-right: 10px;
+  color: #FFF;
+}
+
+
+#delete-member a button {
+  paddin: 5px;
+  background: #FFF;
+  border-radius: 5px;
+}
+
+.options button {
+  padding: 5px;
+  margin-bottom: 10px;
+  background: #FFF;
+  border-radius: 5px;
+}

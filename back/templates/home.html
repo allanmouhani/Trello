@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% if current_user.is_authenticated %}
+
+    {% block head %}
+        <script src="{{ url_for('static', filename='app.js') }}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+    {% endblock head %}
+
+    {% block title %}
+        Trello Clone - Welcome {{ current_user.get_name() }}
+    {% endblock title %}
+
+    {% block header %}
+        <h1>
+            {{ current_user.get_id() }} -
+            <a href="{{ url_for('logout') }}">Log out</a>
+        </h1>
+    {% endblock header %}
+
+    {% block main %}
+        <div id="elm"></div>
+        <script>
+            document.body.addEventListener('dragstart', function (event) {event.dataTransfer.setData('text/plain', null);});
+            var app = Elm.Main.init({node: document.getElementById('elm')});
+        </script>
+    {% endblock main %}
+{% endif %}

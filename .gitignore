@@ -1,0 +1,9 @@
+back/__pycache__
+back/__pycache__/*
+
+back/models/__pycache__
+back/models/__pycache__/*
+
+back/.database
+back/.database/*
+

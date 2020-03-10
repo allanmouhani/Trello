@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
+        {% block head %}{% endblock head %}
+    </head>
+    <body>
+        <header>
+            <a href="{{ url_for('index') }}" id="banner">
+                <svg width="50" height="50" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#0091E6" offset="0%"/><stop stop-color="#0079BF" offset="100%"/></linearGradient></defs><rect fill="url(#a)" width="256" height="256" rx="25"/><rect fill="#FFF" x="144.64" y="33.28" width="78.08" height="112" rx="12"/><rect fill="#FFF" x="33.28" y="33.28" width="78.08" height="176" rx="12"/></svg>
+                <h3>Trello Clone</h3>
+            </a>
+            {% block header %}{% endblock header %}
+        </header>
+        <main>
+            {% block main %}{% endblock main %}
+        </main>
+        <footer>
+            {% block footer %}{% endblock footer %}
+        </footer>
+    </body>
+</html>

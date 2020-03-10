@@ -1,0 +1,67 @@
+/* Home Page Stylesheet */
+
+body {
+  background: url("assets/trello_bg.png") no-repeat fixed;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  position: relative;
+  top: 20vh;
+}
+#main-section {
+  display: flex;
+  justify-content: center;
+}
+
+#main-section ul {
+  background: #007AC0;
+  list-style: none;
+  list-style-position: inside;
+  padding: 8vw;
+  border-radius: 10px;
+}
+
+#main-section ul li {
+  margin-bottom: 2rem;
+}
+
+#main-section ul li::before {
+  content: "\2022";
+  color: #FFF;
+  font-weight: 900;
+  display: inline-block;
+  width: 1em;
+}
+
+#main-section ul li a {
+  text-decoration: none;
+  font-size: 2vw;
+  color: #FFF;
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+  text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.5);
+  transition-property: all;
+  transition-duration: 0.8s;
+  padding: 5px;
+}
+
+#main-section ul li a:hover {
+  background: #FFF;
+  color: #007AC0;
+  text-decoration: line-through;
+  border-radius: 5px;
+}
+
+#heading {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 1.5rem;
+  font-size: 3vw;
+  text-shadow: -2px 2px 5px rgba(128, 128, 128, 0.5);
+}

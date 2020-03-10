@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}Trello Clone{% endblock title %}
+
+{% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">{% endblock head %}
+
+
+{% block main %}
+    <div id="main-section">
+        <ul>
+            <li><a href="{{ url_for('login') }}">Log In</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+        </ul>
+    </div>
+{% endblock main %}

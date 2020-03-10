@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}Log in to Trello Clone{% endblock title %}
+
+{% block head %}
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup_login.css') }}">
+{% endblock head %}
+
+{% block main %}
+    <div id="elm"></div>
+    <script>
+        var app = Elm.Main.init({node: document.getElementById('elm')});
+    </script>
+{% endblock main %}
